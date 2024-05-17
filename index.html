@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="setup">
+            <form id="setup-form">
+                <div class="row">
+                    <input type="text" placeholder="Title" name="title" id="title">
+                </div>
+                <div class="row">
+                    <input type="text" placeholder="Subtitle" name="subtitle" id="subtitle">
+                </div>
+                <div class="row col-33">
+                    <input type="number" placeholder="Hours" name="hours" id="hours">
+                    <input type="number" placeholder="Minutes" name="minutes" id="minutes">
+                    <input type="number" placeholder="Seconds" name="seconds" id="seconds">
+                </div>
+                <div class="row">
+                    <button class="primary-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="overlay">
+            <h1 id="overlayCounter">3</h1>
+        </div>
+        <div class="timer">
+            <div class="header">
+                <h1 id="timerTitle"></h1>
+                <h2 id="timerSubtitle"></h2>
+            </div>
+            <div class="time">
+                <div class="col first">
+                    <h3 class="time" id="timeHours">00</h3>
+                    <p>HOURS</p>
+                </div>
+                <div class="col middle">
+                    <h3>:</h3>
+                </div>
+                <div class="col">
+                    <h3 class="time" id="timeMinutes">00</h3>
+                    <p>MINUTES</p>
+                </div>
+                <div class="col middle">
+                    <h3>:</h3>
+                </div>
+                <div class="col">
+                    <h3 class="time" id="timeSeconds">00</h3>
+                    <p>SECONDS</p>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            <button class="primary-btn" id="startButton">START</button>
+            <button class="primary-btn" id="stopButton">STOP</button>
+            <button class="primary-btn" id="resetButton">RESET</button>
+            <button class="primary-btn" id="fullscreenButton">FULLSCREEN</button>
+        </div>
+        <footer class="footer">
+            <img src="/assets/webkehitys_logo.svg" alt="Webkehitys logo">
+            <p>Webkehitys.fi © Eeli Grén </p>
+        </footer>
+    </main>
+</body>
+</html>
