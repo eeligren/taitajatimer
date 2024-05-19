@@ -1,215 +1,217 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url('/assets/Poppins-Regular.ttf');
-    font-weight: 400;
+  font-family: 'Poppins';
+  src: url('/assets/Poppins-Regular.ttf');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('/assets/Poppins-Light.ttf');
-    font-weight: 300;
+  font-family: 'Poppins';
+  src: url('/assets/Poppins-Light.ttf');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('/assets/Poppins-SemiBold.ttf');
-    font-weight: 500;
+  font-family: 'Poppins';
+  src: url('/assets/Poppins-SemiBold.ttf');
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('/assets/Poppins-Bold.ttf');
-    font-weight: 600;
+  font-family: 'Poppins';
+  src: url('/assets/Poppins-Bold.ttf');
+  font-weight: 600;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    overflow-y: hidden;
-    height: 100vh;
-    background-image: url('/assets/bg.svg');
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: fill;
-    font-family: 'Poppins', 'Arial', 'sans-serif';
-    color: #fff;
+html,
+body {
+  overflow-y: hidden;
+  height: 100vh;
+  background-image: url('/assets/bg.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  font-family: 'Poppins', 'Arial', 'sans-serif';
+  color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body.overtime {
-    background-image: url('/assets/overbg.svg');
+  background: rgb(26, 7, 75);
+  background: linear-gradient(
+    47deg,
+    rgba(26, 7, 75, 1) 0%,
+    rgba(126, 44, 3, 1) 100%
+  );
 }
 
-input, button, textarea {
-    font-family: 'Poppins', 'Arial', 'sans-serif';
+input,
+button,
+textarea {
+  font-family: 'Poppins', 'Arial', 'sans-serif';
 }
 
 .setup {
-    background-color: #141B26;
-    padding: 2rem;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 200px;
-    width: 350px;
+  background-color: #141b26;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 375px;
 }
 
 .setup form {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .row {
-    display: grid;
+  display: grid;
 }
 
-.row.col-33 {
-    column-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+.row.col-50 {
+  column-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 input {
-    padding: .6rem;
-    border: 2px solid #6d6d6d;
-    border-radius: 5px;
-    width: 100%;
+  padding: 0.6rem;
+  border: 2px solid #6d6d6d;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .timer {
-    display: none;
+  display: none;
 }
 
 .primary-btn {
-    padding: .6rem 1.5rem;
-    border: 2px solid #6948BD;
-    cursor: pointer;
-    border-radius: 5px;
-    color: #0A111B;
-    font-weight: 500;
-    background-color: #6948BD;
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #6948bd;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #0a111b;
+  font-weight: 500;
+  background-color: #6948bd;
 }
 
 .primary-btn:hover {
-    background-color: transparent;
-    color: #6948BD;
+  background-color: transparent;
+  color: #6948bd;
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: 600;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 .timer {
-    padding: 4rem;
+  padding: 4rem;
 }
 
 .timer .header {
-    text-align: center;
+  text-align: center;
+  margin-bottom: 10rem;
 }
 
 h2 {
-    margin-top: 20px;
-    font-size: 40px;
-    font-weight: 400;
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .time {
-    margin-top: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
 }
 
 .time .col {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .time .col p {
-    font-size: 40px;
+  font-size: 18px;
+  text-transform: lowercase;
 }
 
 .time .col h3 {
-    line-height: 1em;
-    font-size: 200px;
-    font-weight: 400;
-    width: 200px;
-}
-
-.time .col.middle {
-    margin-bottom: 40px;
+  line-height: 1em;
+  font-size: 250px;
+  font-weight: 400;
+  width: 300px;
+  margin: 0;
 }
 
 .time .col.middle h3 {
-    width: auto;
+  width: auto;
+  font-size: 150px;
+  margin-bottom: 3rem;
 }
 
 .time .dir {
-    margin-bottom: 50px;
-}
-
-.time .first::before {
-    content: '-';
-    position: absolute;
-    left: -150px;
-    top: 0;
-    font-size: 200px;
-}
-
-.over::before {
-    content: '+' !important;
+  margin-bottom: 50px;
 }
 
 .actions {
-    margin-top: 5vh;
-    display: none;
-    justify-content: center;
-    gap: 1rem;
+  margin-top: 5vh;
+  display: none;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #0a111bcb;
-    backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #0a111bcb;
+  backdrop-filter: blur(10px);
 }
 
 .overlay h1 {
-    font-size: 18vw;
-    font-weight: 400;
+  font-size: 18vw;
+  font-weight: 400;
 }
 
 .footer {
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 0;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
 }
 
 .footer img {
-    width: 200px;
-    margin-bottom: 2rem;
+  width: 200px;
+  margin-bottom: 2rem;
 }
 
 .footer p {
-    font-size: 16px;
-    color: #D8D8D8;
-    font-weight: 300;
+  font-size: 16px;
+  color: #d8d8d8;
+  font-weight: 300;
 }
